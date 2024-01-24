@@ -9,3 +9,7 @@
     color: rgb(145, 145, 145);
     font-weight: 300;
 }
+::backdrop {
+    background:black;
+    font-family: "Poppins";
+}
