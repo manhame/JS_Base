@@ -1,0 +1,11 @@
+#carre {
+    width: 200px;
+    height: 200px;
+    background-color: aqua ;
+}
+#text {
+    font-family: "Poppins";
+    font-size: 14px;
+    color: rgb(145, 145, 145);
+    font-weight: 300;
+}
