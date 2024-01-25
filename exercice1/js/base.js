@@ -1,4 +1,4 @@
-
+/*n'affiche pas les cosole.log*/
 const carre = document.querySelector("#carre");
 const compStyles = window.getComputedStyle(carre);
 const dialog = document.querySelector("#dialog");
