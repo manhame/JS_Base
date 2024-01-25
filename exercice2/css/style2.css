@@ -41,7 +41,7 @@
     position: relative;
     width: 200px;
     height: 200px;
-    background-color: white;
+    background-color: rgb(204, 10, 10);
 }
 #btn {
     position: absolute;
