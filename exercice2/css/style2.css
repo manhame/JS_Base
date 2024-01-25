@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+.carre1 {
+    width: 200px;
+    height: 200px;
+    background-color: aqua ;
+}
+.carre2 {
+    width: 200px;
+    height: 200px;
+    background-color: red ;
+}
+.carre3 {
+    width: 200px;
+    height: 200px;
+    background-color: green ;
+}
+.carre4 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow ;
+}
+#text {
+    padding: 30px;
+    font-size: 10px;
+    color: rgb(145, 145, 145);
+    font-weight: 300;
+    display: block;
+}
+
+#text dialog {
+    color:black;
+}
+#dialog {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
+#btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: blue;
+}
+#dialog ul {
+    color: white;
+}
+#wrapper {
+    display: flex;
+    min-height: 100vh;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;;
+}
