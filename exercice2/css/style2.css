@@ -6,57 +6,56 @@
     box-sizing: border-box;
     font-family: "Poppins";
 }
-.carre1 {
-    width: 200px;
-    height: 200px;
-    background-color: aqua ;
+
+#wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.carre2 {
+
+.carres {
+    display: flex;
+    gap: 10px;
+    width: 800px;
+}
+.carre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 200px;
+}
+.bleu {
+    background-color: rgb(8, 84, 134) ;
+}
+.rouge {
     background-color: red ;
 }
-.carre3 {
-    width: 200px;
-    height: 200px;
+.vert {
+   
     background-color: green ;
 }
-.carre4 {
-    width: 200px;
-    height: 200px;
-    background-color: yellow ;
+.jaune {
+   
+    background-color: rgb(138, 138, 7) ;
 }
-#text {
+
+.carreSolo {
+    width: 800px;
+    margin-top: 20px;
+} 
+#noir {
+    background-color: black;
+    color: #fff;
+    margin: auto;
+}
+
+.text {
     padding: 30px;
     font-size: 10px;
     color: rgb(145, 145, 145);
     font-weight: 300;
-    display: block;
 }
 
-#text dialog {
-    color:black;
-}
-#dialog {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    background-color: rgb(204, 10, 10);
-}
-#btn {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    color: blue;
-}
-#dialog ul {
-    color: white;
-}
-#wrapper {
-    display: flex;
-    min-height: 100vh;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;;
-}
