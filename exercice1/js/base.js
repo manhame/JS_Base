@@ -1,54 +1,29 @@
-/*n'affiche pas les cosole.log*/
-const carre = document.querySelector("#carre");
-const compStyles = window.getComputedStyle(carre);
-const dialog = document.querySelector("#dialog");
-/*
-let carre = document.querySelector("#carre");
-        let style = getComputedStyle(carre);
+// Récupère l'élément HTML avec l'identifiant "carre" et le stocke dans la constante 'carre'
+const carre = document.getElementById("carre");
 
-console.log("width", style.width);
-*/
-/* essai pour changer la couleur noire du texte dialogbox car fond noir demandé
-const textContent = document.querySelector("#text dialog").style.color='green';
-*/
+// Obtient les styles calculés pour l'élément 'carre' et les stocke dans la constante 'style'
+const style = window.getComputedStyle(carre);
 
-dialog.textContent =
-  `127 ....indique : \n  ${compStyles.getPropertyValue("width")},\n`+
-  `height : ${compStyles.getPropertyValue("height")},\n`+
-  `background-color : ${compStyles.getPropertyValue("background-color")},\n`
-
- /* document.querySelector("#dialog").innerHTML = text;*/
+// Ajoute un écouteur d'événements de clic à l'élément 'carre'
+carre.addEventListener("click", function() {
+    // Affiche une boîte de dialogue avec les propriétés de style de l'élément 'carre'
+    alert(
+        "Background color :" + style.backgroundColor + "\n" +
+        "Color : " + style.color  + "\n" +
+        "Height: " + style.height + "\n" +
+        "Width: " + style.width
+    );
+});
 
 
-/* essai pour afficher toutes les propriétés d'un élément
-  let text = "";
-  for (x in compStyles) {
-    compStyles.Prop = compStyles.item(x)
-    text += compStyles.Prop + " = " + compStyles.getPropertyValue(compStyles.Prop) + "<br>";
-  }
-/* méthode "alert"
-const dialogBox = "width: 200px height: 200px background-color";
-alert(dialogBox);
+// Fonction qui affiche les propriétés de style d'un élément
+// const afficherProprietesStyle = (element) => {
+//   const style = window.getComputedStyle(element);
+//   alert(`Background color: ${style.backgroundColor}\nColor: ${style.color}\nHeight: ${style.height}\nWidth: ${style.width}`);
+// };
 
-const modalCarre = document.querySelector("#carre");
+// // Récupère l'élément HTML avec l'identifiant "carre" et le stocke dans la constante 'carre'
+// const carre = document.getElementById("carre");
 
-modalCarre.dataset.width; 
-modalCarre.dataset.height;
-modalCarre.dataset.background-color;
-
-
-/* méthode à partir du support de cours
-  const carre = document.querySelector("#carre");
-  const btn = document.querySelector('#btn');
- 
-  carre.addEventListener('click', function() {
-    dialogBox.showModal();
-  })
- 
-  btn.addEventListener('click', function() {
-    deleteDialogBox(dialogBox);
-  })
-  function deleteDialogBox(dialogBox){
-    dialogBox.remove;
-  }
-  */
+// // Ajoute un écouteur d'événements de clic à l'élément 'carre'
+// carre.addEventListener("click", () => afficherProprietesStyle(carre));

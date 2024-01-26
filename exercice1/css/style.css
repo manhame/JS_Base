@@ -27,20 +27,31 @@
     display: block;
 }
 
-#text dialog {
+#text carre-content {
     color:black;
 }
-#dialog {
+#carre-content {
     position: relative;
     width: 200px;
     height: 200px;
     background-color: white;
 }
 #btn {
+    color: blue;
+}
+#close-btn {
     position: absolute;
     bottom: 10px;
     right: 10px;
     color: blue;
+}
+#close-btn:hover {
+    background-color:white;
+    }
+#show-carre {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
 }
 #dialog ul {
     color: white;
