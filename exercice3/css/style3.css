@@ -17,18 +17,32 @@
     display: flex;
   }
   .carre {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 200px;
     height: 200px;
     background-color: green;
     margin: 5px;
+    cursor: pointer;
   }
   .text {
     font-size: 20px;
     color: white;
     font-weight: 300;
   }
+  .carreclique {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 180px;
+    height: 180px;
+    transform: rotate(360deg);
+    transition: 1s;
+    cursor: pointer;
+  }
+
   
   
   
