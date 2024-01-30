@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins";
 }
-
-.container {
+#container {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -13,36 +14,62 @@
 .row {
     display: flex;
     background-color: grey;
-    width: 300px;
-    height: 150PX;
+    width: 600px;
+    height: 300PX;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 .icon {
     display: flex;
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
     justify-content: center;
     align-items: center;
+    border-radius: 0px;
+    transition: all 2s ease-out;
+    /* transition: border-radius 2s ease-out, opacity 1.9s linear; */
     cursor: pointer;
 }
-.iconclicked {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
+.iconClicked {
+    border-radius: 20px;
     box-shadow : rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
-.fb {
-    background-color: rgb(39, 71, 230);
-    
+.text {
+    font-size: 10px;
+    color: solid black;
+    font-weight: 300;
+    position: absolute;
+    bottom: 350px;
+    display: none;
 }
-.x {
+
+.text-displayed {        /*on crée une class avec la seule propriété amenée à changer*/
+    display: block;
+}
+
+.fa-brands {        /*une class pour les propriétés communes aux icons idem à des caractères*/
+    font-size: 3em;
+    color: #ffffff;
+}
+
+#fb {
+    background-color: rgb(39, 71, 230);
+}
+#x {
     background-color: rgb(16, 201, 229);
 }
-.insta {
+#insta {
     background-color: rgb(231, 71, 18);
 }
+
+/*
+css-selector {
+    property: value;
+}
+
+Les 3 sélecteurs CSS les plus utiles :
+h1 -> nom de balise HTML (tagname)
+.icon -> classe CSS (attribut HTML class)
+#fb -> id (attribut HTML id)
+*/
